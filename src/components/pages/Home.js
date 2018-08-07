@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Staff = ({}) => (
-  <div>Staff</div>
+  <div>Home</div>
 );
 
 export default Staff;
