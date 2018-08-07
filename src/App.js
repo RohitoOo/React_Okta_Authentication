@@ -17,19 +17,16 @@ const config = {
 }
 
 
-function onAuthRequired({history}){
-  history.push('/login')
-}
+
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Security
-          issuer={config.issuer}
-                  client_id={config.client_id}
-                  redirect_uri={config.redirect_uri}
-                  onAuthRequired={onAuthRequired}
+            issuer={config.issuer}
+            client_id={config.client_id}
+            redirect_uri={config.redirect_uri}
           >
           <div className="App">
             <Navbar/>
